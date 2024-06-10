@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.bg-header {
+  background-color: #ffff;
+}
+.back {
+  background-color: #e5e4e47a;
+}
+.pad {
+  /* padding-right: 50px; */
+}
+.image-section {
+  position: relative;
+  margin-top: -32px; /* Adjust as needed */
+  padding-bottom: 20px; /* Adjust to create space for the border */
+}
+
+.image-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; /* Adjust the width of the border */
+  border-bottom: 1px solid rgb(203, 199, 199); /* Set the border color and thickness */
+}
+.margin-right-sm{
+  margin-right: 2rem;
+}
+.md-72 {
+  margin-top: 8rem;
+}
+.pd {
+  padding-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .md-72 {
+    margin-top: 24rem; 
+    /* background-color: red; */
+  }
+}
+@media (min-width: 1024px) { /* Tailwind's default lg breakpoint */
+  .pd {
+    padding-top: 20rem;
+  }
+  .bg-desktop {
+    background-image: url('../public/Rectangle\ 48.png'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .pad {
+    padding-right: 150px;
+  }
+  .image-section {
+    position: relative;
+    margin-top: -32px; /* Adjust as needed */
+    padding-bottom: 20px; /* Adjust to create space for the border */
+  }
+  
+  .image-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%; /* Adjust the width of the border */
+    border-bottom: 2px solid rgb(142, 139, 139); /* Set the border color and thickness */
+  }
+  .md-72 {
+    margin-top: 40rem; 
+    /* background-color: red; */
+  }
+}
