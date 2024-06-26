@@ -23,7 +23,7 @@ const Header = () => {
         id="navbar"
         className={`${
           isActive ? 'inline-block' : 'hidden'
-        } bg-white absolute top-0 left-0 w-full h-screen flex items-center justify-center lg:relative lg:w-auto lg:h-auto lg:block z-50`}
+        } bg-white fixed top-0 left-0 w-full h-screen flex items-center justify-center lg:relative lg:w-auto lg:h-auto lg:block z-50`}
       >
         <ul className="flex flex-col gap-8 text-center lg:flex lg:flex-row lg:items-center lg:justify-between lg:space-x-20">
           <li>

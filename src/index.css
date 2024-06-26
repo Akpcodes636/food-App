@@ -50,7 +50,12 @@ body {
 .pd {
   padding-top: 1rem;
 }
-
+.h-screens {
+  height: 120vh;
+}
+.secondary-img {
+  width: 50%;
+}
 @media (min-width: 768px) {
   .md-72 {
     margin-top: 24rem; 
@@ -63,6 +68,12 @@ body {
   }
   .bg-desktop {
     background-image: url('../public/Rectangle\ 48.png'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .bg-desktops {
+    background-image: url('../public/Rectangle\ 47.png'); /* Replace with your background image URL */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -89,4 +100,5 @@ body {
     margin-top: 40rem; 
     /* background-color: red; */
   }
+
 }

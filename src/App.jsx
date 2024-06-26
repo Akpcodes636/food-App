@@ -1,21 +1,23 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Primary from './components/primary';
 import Secondary from './components/secondary';
-import Tertary from './components/tertary'
-
-
+import Primary from './components/primary';
+import Tertiary from './components/tertiary';
+import Footer from './components/footer';
 
 function App() {
 
 
   return (
-    <>
+   <>
+
    <Header />
    <Hero />
+   <Primary/>
    <Secondary/>
-   <Primary />
-   <Tertary />
+   <Tertiary />
+   <Footer />
+
     </>
   )
 }

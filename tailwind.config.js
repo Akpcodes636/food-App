@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      width: {
+        '70': '70%',
+      },
       fontFamily: {
         'Poppins':['Poppins','sans-serif']
       }
